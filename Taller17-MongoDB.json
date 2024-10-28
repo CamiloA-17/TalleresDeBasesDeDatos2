@@ -1,0 +1,372 @@
+[
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10b8"
+        },
+        "ISBN": "1",
+        "Titulo": "El nombre del viento",
+        "NombreAutor": "Patrick Rothfuss",
+        "Genero": "Fantasía",
+        "Año": 2007
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10b9"
+        },
+        "ISBN": "2",
+        "Titulo": "El temor de un hombre sabio",
+        "NombreAutor": "Patrick Rothfuss",
+        "Genero": "Fantasía",
+        "Año": 2011
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10ba"
+        },
+        "ISBN": "3",
+        "Titulo": "Dune",
+        "NombreAutor": "Frank Herbert",
+        "Genero": "Ciencia Ficción",
+        "Año": 1965
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10bb"
+        },
+        "ISBN": "4",
+        "Titulo": "El Hobbit",
+        "NombreAutor": "J.R.R. Tolkien",
+        "Genero": "Fantasía",
+        "Año": 1937
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10bc"
+        },
+        "ISBN": "5",
+        "Titulo": "Juego de Tronos",
+        "NombreAutor": "George R.R. Martin",
+        "Genero": "Fantasía",
+        "Año": 1996
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10bd"
+        },
+        "ISBN": "6",
+        "Titulo": "El Silmarillion",
+        "NombreAutor": "J.R.R. Tolkien",
+        "Genero": "Fantasía",
+        "Año": 1977
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10be"
+        },
+        "ISBN": "7",
+        "Titulo": "Neuromante",
+        "NombreAutor": "William Gibson",
+        "Genero": "Ciencia Ficción",
+        "Año": 1984
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10bf"
+        },
+        "ISBN": "8",
+        "Titulo": "Fundación",
+        "NombreAutor": "Isaac Asimov",
+        "Genero": "Ciencia Ficción",
+        "Año": 1951
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10c0"
+        },
+        "ISBN": "9",
+        "Titulo": "La Rueda del Tiempo",
+        "NombreAutor": "Robert Jordan",
+        "Genero": "Fantasía",
+        "Año": 1990
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10c1"
+        },
+        "ISBN": "10",
+        "Titulo": "Elantris",
+        "NombreAutor": "Brandon Sanderson",
+        "Genero": "Fantasía",
+        "Año": 2005
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10c2"
+        },
+        "ISBN": "11",
+        "Titulo": "La Guerra de los Mundos",
+        "NombreAutor": "H.G. Wells",
+        "Genero": "Ciencia Ficción",
+        "Año": 1898
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10c3"
+        },
+        "ISBN": "12",
+        "Titulo": "1984",
+        "NombreAutor": "George Orwell",
+        "Genero": "Distopía",
+        "Año": 1949
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10c4"
+        },
+        "ISBN": "13",
+        "Titulo": "Brave New World",
+        "NombreAutor": "Aldous Huxley",
+        "Genero": "Distopía",
+        "Año": 1932
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10c5"
+        },
+        "ISBN": "14",
+        "Titulo": "Fahrenheit 451",
+        "NombreAutor": "Ray Bradbury",
+        "Genero": "Distopía",
+        "Año": 1953
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10c6"
+        },
+        "ISBN": "15",
+        "Titulo": "El Juego de Ender",
+        "NombreAutor": "Orson Scott Card",
+        "Genero": "Ciencia Ficción",
+        "Año": 1985
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10c7"
+        },
+        "ISBN": "16",
+        "Titulo": "La Mano Izquierda de la Oscuridad",
+        "NombreAutor": "Ursula K. Le Guin",
+        "Genero": "Ciencia Ficción",
+        "Año": 1969
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10c8"
+        },
+        "ISBN": "17",
+        "Titulo": "Snow Crash",
+        "NombreAutor": "Neal Stephenson",
+        "Genero": "Ciencia Ficción",
+        "Año": 1992
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10c9"
+        },
+        "ISBN": "18",
+        "Titulo": "Hyperion",
+        "NombreAutor": "Dan Simmons",
+        "Genero": "Ciencia Ficción",
+        "Año": 1989
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10ca"
+        },
+        "ISBN": "19",
+        "Titulo": "El Problema de los Tres Cuerpos",
+        "NombreAutor": "Liu Cixin",
+        "Genero": "Ciencia Ficción",
+        "Año": 2008
+    },
+    {
+        "_id": {
+            "$oid": "671bfaa01c52bd0485cc10cb"
+        },
+        "ISBN": "20",
+        "Titulo": "La Ciudad y las Estrellas",
+        "NombreAutor": "Arthur C. Clarke",
+        "Genero": "Ciencia Ficción",
+        "Año": 1956
+    },
+    {
+        "filter": {
+            "ISBN": "2"
+        },
+        "update": {
+            "$set": {
+                "Año": 2012,
+                "Genero": "Fantasía Épica"
+            }
+        }
+    },
+    {
+        "filter": {
+            "ISBN": "3"
+        },
+        "update": {
+            "$set": {
+                "Titulo": "Dune (Edición Especial)",
+                "Año": 2021
+            }
+        }
+    },
+    {
+        "filter": {
+            "ISBN": "4"
+        },
+        "update": {
+            "$set": {
+                "Genero": "Aventura",
+                "NombreAutor": "John Ronald Reuel Tolkien"
+            }
+        }
+    },
+    {
+        "filter": {
+            "ISBN": "5"
+        },
+        "update": {
+            "$set": {
+                "ISBN": "5A",
+                "Año": 1998
+            }
+        }
+    },
+    {
+        "filter": {
+            "ISBN": "7"
+        },
+        "update": {
+            "$set": {
+                "Titulo": "Neuromante (Edición Completa)",
+                "Genero": "Ciberpunk"
+            }
+        }
+    },
+    {
+        "filter": {
+            "ISBN": "10"
+        },
+        "update": {
+            "$set": {
+                "Año": 2006,
+                "NombreAutor": "Brandon Sanderson"
+            }
+        }
+    },
+    {
+        "filter": {
+            "ISBN": "12"
+        },
+        "update": {
+            "$set": {
+                "Genero": "Ciencia Ficción",
+                "Titulo": "1984 (Nueva Edición)"
+            }
+        }
+    },
+    {
+        "filter": {
+            "ISBN": "15"
+        },
+        "update": {
+            "$set": {
+                "NombreAutor": "Orson Scott Card",
+                "Genero": "Fantasía"
+            }
+        }
+    },
+    {
+        "filter": {
+            "ISBN": "16"
+        },
+        "update": {
+            "$set": {
+                "ISBN": "16B",
+                "Año": 1970
+            }
+        }
+    },
+    {
+        "filter": {
+            "ISBN": "17"
+        },
+        "update": {
+            "$set": {
+                "Titulo": "Snow Crash (Edición Revisada)",
+                "Genero": "Ciencia Ficción"
+            }
+        }
+    },
+    {
+        "ISBN": "18"
+    },
+    {
+        "Año": {
+            "$gt": 1970
+        }
+    },
+    {
+        "Año": {
+            "$lt": 2006
+        }
+    },
+    {
+        "Año": {
+            "$gte": 1998
+        }
+    },
+    {
+        "Año": {
+            "$lte": 1969
+        }
+    },
+    {
+        "Titulo": {
+            "$ne": "El nombre del viento"
+        }
+    },
+    {
+        "Genero": {
+            "$in": [
+                "Ciencia Ficción",
+                "Fantasía"
+            ]
+        }
+    },
+    {
+        "$and": [
+            {
+                "Año": {
+                    "$gte": 1985
+                }
+            },
+            {
+                "Genero": "Fantasía"
+            }
+        ]
+    },
+    {
+        "$or": [
+            {
+                "Año": {
+                    "$lte": 1985
+                }
+            },
+            {
+                "Genero": "Fantasía"
+            }
+        ]
+    }
+]
