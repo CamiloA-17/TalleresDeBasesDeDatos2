@@ -1,0 +1,358 @@
+// Normalización
+[
+  {
+      "ISBN":"11",
+      "Titulo":"Cien Años de Soledad",
+      "AutorID":11,
+      "GeneroID":1
+  },
+  {
+      "ISBN":"12",
+      "Titulo":"Don Quijote de la Mancha",
+      "AutorID":12,
+      "GeneroID":2
+  },
+  {
+      "ISBN":"13",
+      "Titulo":"La Odisea",
+      "AutorID":13,
+      "GeneroID":3
+  },
+  {
+      "ISBN":"14",
+      "Titulo":"Matar a un Ruiseñor",
+      "AutorID":14,
+      "GeneroID":4
+  },
+  {
+      "ISBN":"15",
+      "Titulo":"Orgullo y Prejuicio",
+      "AutorID":15,
+      "GeneroID":5
+  },
+  {
+      "ISBN":"16",
+      "Titulo":"El Gran Gatsby",
+      "AutorID":16,
+      "GeneroID":6
+  },
+  {
+      "ISBN":"17",
+      "Titulo":"En Busca del Tiempo Perdido",
+      "AutorID":17,
+      "GeneroID":7
+  },
+  {
+      "ISBN":"18",
+      "Titulo":"La Divina Comedia",
+      "AutorID":18,
+      "GeneroID":8
+  },
+  {
+      "ISBN":"19",
+      "Titulo":"Hamlet",
+      "AutorID":19,
+      "GeneroID":9
+  },
+  {
+      "ISBN":"20",
+      "Titulo":"El Retrato de Dorian Gray",
+      "AutorID":20,
+      "GeneroID":10
+  },
+  {
+      "AutorID":11,
+      "Nombre":"Gabriel García Márquez",
+      "Nacionalidad":"Colombiano"
+  },
+  {
+      "AutorID":12,
+      "Nombre":"Miguel de Cervantes",
+      "Nacionalidad":"Español"
+  },
+  {
+      "AutorID":13,
+      "Nombre":"Homero",
+      "Nacionalidad":"Griego"
+  },
+  {
+      "AutorID":14,
+      "Nombre":"Harper Lee",
+      "Nacionalidad":"Estadounidense"
+  },
+  {
+      "AutorID":15,
+      "Nombre":"Jane Austen",
+      "Nacionalidad":"Inglesa"
+  },
+  {
+      "AutorID":16,
+      "Nombre":"F. Scott Fitzgerald",
+      "Nacionalidad":"Estadounidense"
+  },
+  {
+      "AutorID":17,
+      "Nombre":"Marcel Proust",
+      "Nacionalidad":"Francés"
+  },
+  {
+      "AutorID":18,
+      "Nombre":"Dante Alighieri",
+      "Nacionalidad":"Italiano"
+  },
+  {
+      "AutorID":19,
+      "Nombre":"William Shakespeare",
+      "Nacionalidad":"Inglés"
+  },
+  {
+      "AutorID":20,
+      "Nombre":"Oscar Wilde",
+      "Nacionalidad":"Irlandés"
+  },
+  {
+      "GeneroID":1,
+      "NombreGenero":"Realismo Mágico"
+  },
+  {
+      "GeneroID":2,
+      "NombreGenero":"Aventura"
+  },
+  {
+      "GeneroID":3,
+      "NombreGenero":"Épico"
+  },
+  {
+      "GeneroID":4,
+      "NombreGenero":"Drama"
+  },
+  {
+      "GeneroID":5,
+      "NombreGenero":"Romance"
+  },
+  {
+      "GeneroID":6,
+      "NombreGenero":"Tragedia"
+  },
+  {
+      "GeneroID":7,
+      "NombreGenero":"Filosofía"
+  },
+  {
+      "GeneroID":8,
+      "NombreGenero":"Poesía"
+  },
+  {
+      "GeneroID":9,
+      "NombreGenero":"Teatro"
+  },
+  {
+      "GeneroID":10,
+      "NombreGenero":"Ficción Gótica"
+  },
+  {
+      "$lookup":{
+          "from":"Autores",
+          "localField":"AutorID",
+          "foreignField":"AutorID",
+          "as":"AutorInfo"
+      }
+  },
+  {
+      "$lookup":{
+          "from":"Generos",
+          "localField":"GeneroID",
+          "foreignField":"GeneroID",
+          "as":"GeneroInfo"
+      }
+  }
+]
+
+// Desnormalización
+
+[
+  {
+      "ProductoID": 1,
+      "Nombre": "Laptop",
+      "Descripcion": "Laptop de alta gama",
+      "Precio": 1500000,
+      "Categoria": {
+          "CategoriaID": 1,
+          "NombreCategoria": "Electrónica"
+      },
+      "Comentarios": [
+          {
+              "ComentarioID": 1,
+              "Texto": "Excelente rendimiento",
+              "Cliente": "Carlos"
+          },
+          {
+              "ComentarioID": 2,
+              "Texto": "Muy cara",
+              "Cliente": "Ana"
+          }
+      ]
+  },
+  {
+      "ProductoID": 2,
+      "Nombre": "Smartphone",
+      "Descripcion": "Smartphone con gran cámara",
+      "Precio": 800000,
+      "Categoria": {
+          "CategoriaID": 1,
+          "NombreCategoria": "Electrónica"
+      },
+      "Comentarios": [
+          {
+              "ComentarioID": 3,
+              "Texto": "Fotos increíbles",
+              "Cliente": "María"
+          }
+      ]
+  },
+  {
+      "ProductoID": 3,
+      "Nombre": "Tablet",
+      "Descripcion": "Tablet para dibujar",
+      "Precio": 500000,
+      "Categoria": {
+          "CategoriaID": 1,
+          "NombreCategoria": "Electrónica"
+      },
+      "Comentarios": []
+  },
+  {
+      "ProductoID": 4,
+      "Nombre": "Monitor",
+      "Descripcion": "Monitor 4K",
+      "Precio": 300000,
+      "Categoria": {
+          "CategoriaID": 1,
+          "NombreCategoria": "Electrónica"
+      },
+      "Comentarios": [
+          {
+              "ComentarioID": 4,
+              "Texto": "Imagen muy nítida",
+              "Cliente": "Luis"
+          }
+      ]
+  },
+  {
+      "ProductoID": 5,
+      "Nombre": "Teclado",
+      "Descripcion": "Teclado mecánico",
+      "Precio": 100000,
+      "Categoria": {
+          "CategoriaID": 1,
+          "NombreCategoria": "Electrónica"
+      },
+      "Comentarios": [
+          {
+              "ComentarioID": 5,
+              "Texto": "Muy cómodo para escribir",
+              "Cliente": "Ana"
+          }
+      ]
+  },
+  {
+      "ProductoID": 6,
+      "Nombre": "Mouse",
+      "Descripcion": "Mouse inalámbrico",
+      "Precio": 50000,
+      "Categoria": {
+          "CategoriaID": 1,
+          "NombreCategoria": "Electrónica"
+      },
+      "Comentarios": [
+          {
+              "ComentarioID": 6,
+              "Texto": "Muy preciso",
+              "Cliente": "Carlos"
+          }
+      ]
+  },
+  {
+      "ProductoID": 7,
+      "Nombre": "Impresora",
+      "Descripcion": "Impresora multifuncional",
+      "Precio": 200000,
+      "Categoria": {
+          "CategoriaID": 1,
+          "NombreCategoria": "Electrónica"
+      },
+      "Comentarios": [
+          {
+              "ComentarioID": 7,
+              "Texto": "Muy útil para la oficina",
+              "Cliente": "Juan"
+          }
+      ]
+  },
+  {
+      "ProductoID": 8,
+      "Nombre": "Auriculares",
+      "Descripcion": "Auriculares con cancelación de ruido",
+      "Precio": 150000,
+      "Categoria": {
+          "CategoriaID": 1,
+          "NombreCategoria": "Electrónica"
+      },
+      "Comentarios": [
+          {
+              "ComentarioID": 8,
+              "Texto": "Sonido espectacular",
+              "Cliente": "Juan"
+          }
+      ]
+  },
+  {
+      "ProductoID": 9,
+      "Nombre": "Cámara",
+      "Descripcion": "Cámara réflex",
+      "Precio": 1200000,
+      "Categoria": {
+          "CategoriaID": 1,
+          "NombreCategoria": "Electrónica"
+      },
+      "Comentarios": [
+          {
+              "ComentarioID": 9,
+              "Texto": "Fotos profesionales",
+              "Cliente": "Juan"
+          }
+      ]
+  },
+  {
+      "ProductoID": 10,
+      "Nombre": "Smartwatch",
+      "Descripcion": "Reloj inteligente",
+      "Precio": 300000,
+      "Categoria": {
+          "CategoriaID": 1,
+          "NombreCategoria": "Electrónica"
+      },
+      "Comentarios": [
+          {
+              "ComentarioID": 10,
+              "Texto": "Muy práctico",
+              "Cliente": "Juan"
+          }
+      ]
+  }
+]
+
+db.Productos.find(
+{},
+{ "Categoria": 0, "Comentarios": 0 }
+)
+
+db.Productos.find(
+{},
+{ "Comentarios": 0 }
+)
+
+db.Productos.find(
+{},
+{ "Categoria": 0 }
+)
